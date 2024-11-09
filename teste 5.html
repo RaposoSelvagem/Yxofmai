@@ -7,113 +7,43 @@
     <style>
         /* Estilo para a imagem de fundo */
         body {
-            background-image: url('https://i.ibb.co/rHS09XW/cpp.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            font-family: 'Arial', sans-serif;
+            background-image: url('https://i.ibb.co/rHS09XW/cpp.png'); /* Insira o caminho da imagem ou a URL */
+            background-size: cover;  /* Faz com que a imagem cubra toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-attachment: fixed; /* Faz com que a imagem não role com o conteúdo */
+            font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            height: 100vh;
+            margin-top: 50px;
+            color: white; /* Cor do texto */
         }
 
-        /* Container principal */
         .container {
             max-width: 600px;
-            margin: 0 auto;
-            padding: 30px;
-            background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-            margin-top: 100px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para facilitar a leitura */
+            border-radius: 5px;
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 25px;
-            line-height: 1.6;
+            color: #fff;
         }
 
         .product {
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
 
-        .product p {
-            font-size: 1.4rem;
-            margin-top: 5px;
-            font-weight: bold;
-        }
-
-        /* Estilo das áreas de conteúdo "bloqueadas" */
-        .content-placeholder {
-            width: 100%;
-            height: 250px;
-            margin-top: 25px;
-            background-color: rgba(255, 255, 255, 0.4); /* Cor semitransparente */
-            border-radius: 10px;
-            display: inline-block;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .content-placeholder::after {
-            content: 'Content available after purchase';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            font-size: 20px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-        }
-
-        /* Estilo do botão de compra */
         .button-container {
-            margin-top: 30px;
+            margin: 20px 0;
         }
 
-        .button-container img {
-            width: 180px; /* Tamanho maior do botão */
-            transition: transform 0.2s ease;
-        }
-
-        .button-container img:hover {
-            transform: scale(1.1);
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .content-placeholder {
-                height: 200px;
-            }
-
-            .button-container img {
-                width: 160px;
-            }
+        /* Estilo para a imagem de preview */
+        .preview-image {
+            max-width: 50%; /* Ajuste o valor para o tamanho desejado */
+            height: auto;
+            margin: 20px 0;
+            border: 2px solid #fff;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -121,9 +51,15 @@
 
 <div class="container">
     <h1>Buy to receive videos and images</h1>
-    <p>4 Terabytes of videos and images very cheap.</p>
+    <p>2 Terabytes of videos and images .</p>
+
+    <!-- Espaço para a imagem de preview -->
+    <div>
+        <img src="https://i.ibb.co/NWQ0Lvf/2-tb-mega-folder-link-in-comment-new-collection-bcoi2y74iu.jpg" alt="Preview do Produto" class="preview-image">
+    </div>
     
     <div class="product">
+        <h2></h2>
         <p><strong>Price:</strong> 3$</p>
     </div>
     
@@ -136,13 +72,8 @@
             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="O PayPal é a forma fácil e segura de pagar suas compras on-line." alt="Comprar agora" />
         </form>
     </div>
-
-    <p>After payment, you will receive a link to full content. Enjoy yourself.</p>
-
-    <!-- Áreas de conteúdo "bloqueadas" visual -->
-    <div class="content-placeholder"></div>
-    <div class="content-placeholder"></div>
-    <div class="content-placeholder"></div>
+    
+    <p>After payment, you will receive a mega link of full content. Enjoy yourself.</p>
 </div>
 
 </body>
